@@ -1,0 +1,54 @@
+================================
+MEMORY ACCESS PATTERN ANALYSIS
+================================
+
+Total memory accesses: 165612
+Memory reads: 115375 (69.6658%)
+Memory writes: 50237 (30.3342%)
+
+==== SPATIAL LOCALITY ANALYSIS ====
+Most common address distances:
+       0 bytes:     142726 occurrences (86.18%)
+       8 bytes:       7739 occurrences (4.67%)
+       2 bytes:       4724 occurrences (2.85%)
+       4 bytes:       4279 occurrences (2.58%)
+       1 bytes:       2483 occurrences (1.50%)
+      20 bytes:       1600 occurrences (0.97%)
+      12 bytes:        666 occurrences (0.40%)
+      16 bytes:        552 occurrences (0.33%)
+      24 bytes:        135 occurrences (0.08%)
+      32 bytes:         74 occurrences (0.04%)
+
+==== TEMPORAL LOCALITY ANALYSIS ====
+Most common reuse distances (smaller is better for cache):
+       1 accesses:       7885 occurrences (4.76%)
+       8 accesses:       6778 occurrences (4.09%)
+       7 accesses:       6618 occurrences (4.00%)
+     248 accesses:       5646 occurrences (3.41%)
+      19 accesses:       4405 occurrences (2.66%)
+       4 accesses:       4028 occurrences (2.43%)
+      12 accesses:       3102 occurrences (1.87%)
+     256 accesses:       3053 occurrences (1.84%)
+       3 accesses:       3021 occurrences (1.82%)
+       5 accesses:       2868 occurrences (1.73%)
+
+==== STRIDE ANALYSIS ====
+Stride distribution:
+  Small strides (<=64 bytes): 84693 (51.14%)
+  Medium strides (65-512 bytes): 12081 (7.29%)
+  Large strides (>512 bytes): 68837 (41.57%)
+
+Most common specific strides:
+       8 bytes:      34113 occurrences (20.60%)
+       0 bytes:       7885 occurrences (4.76%)
+      16 bytes:       5922 occurrences (3.58%)
+      32 bytes:       5707 occurrences (3.45%)
+       4 bytes:       4638 occurrences (2.80%)
+      40 bytes:       3187 occurrences (1.92%)
+      28 bytes:       3136 occurrences (1.89%)
+      12 bytes:       3065 occurrences (1.85%)
+      24 bytes:       3033 occurrences (1.83%)
+       1 bytes:       2634 occurrences (1.59%)
+
+Cache-friendliness assessment:
+  MODERATE: Mixed stride patterns detected, somewhat cache-friendly.
