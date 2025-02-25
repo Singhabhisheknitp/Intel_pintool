@@ -49,7 +49,7 @@ VOID RecordMemRead(VOID* ip, VOID* addr, UINT32 size, THREADID tid) {
     access.timestamp = totalAccesses;
     access.isRead = true;
     access.tid = tid;
-    memAccesses.push_back(access);
+    memAccesses.push_back(access); // all the addresses accessed along with its metadata is stored in this vector.
     
     // Update statistics
     totalAccesses++;
